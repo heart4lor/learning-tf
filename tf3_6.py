@@ -39,5 +39,5 @@ with tf.Session() as sess:
         if i % 500 == 0:
             total_loss = sess.run(loss, feed_dict={x: X, y_: Y})
             print("After %d traning step(s), loss on all data is %g" % (i, total_loss))
-    print("\nw1:\n", sess.run(w1))
+    print("\nw1:\n", sess.run(w1)) 
     print("w2:\n", sess.run(w2))
